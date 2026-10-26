@@ -1,0 +1,66 @@
+{
+  "name": "neettracker-desktop",
+  "version": "1.0.1",
+  "description": "NeetTracker Desktop Application",
+  "author": "NeetTracker <support@neettracker.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win nsis --x64",
+    "build:store": "electron-builder --win appx --x64",
+    "build:all": "electron-builder --win nsis --x64"
+  },
+  "build": {
+    "appId": "com.neettracker.app",
+    "productName": "NeetTracker",
+    "directories": {
+      "output": "dist"
+    },
+    "afterPack": "./afterPack.js",
+    "mac": {
+      "category": "public.app-category.education",
+      "target": "dir"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "appx",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "publisherName": "Tracker Platforms"
+    },
+    "appx": {
+      "applicationId": "NeetTracker",
+      "identityName": "TrackerPlatforms.NeetTracker",
+      "publisher": "CN=19DE11E7-DF97-4077-8896-1CAEA8DAEBBF",
+      "publisherDisplayName": "Tracker Platforms",
+      "displayName": "NeetTracker",
+      "backgroundColor": "#1072F7",
+      "showNameOnTiles": true
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "packElevateHelper": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "license": "license.txt"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}

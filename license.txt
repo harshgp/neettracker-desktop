@@ -1,0 +1,27 @@
+NeetTracker End User License Agreement
+
+Please read the following License Agreement carefully before installing the NeetTracker Desktop Application. By installing, copying, or otherwise using this software, you agree to be bound by the terms of this agreement.
+
+1. LICENSE GRANT
+NeetTracker grants you a personal, non-exclusive, non-transferable, limited license to install and use the NeetTracker Desktop Application solely for your personal or school-authorized exam preparation and testing activities.
+
+2. SECURITY & INTEGRITY CONSTRAINTS
+To maintain the integrity of examinations, this application implements security measures, including:
+- Prevention of copy, cut, and right-click context menu operations.
+- Lockout of unauthorized window blurring or application switching.
+- Detection of screenshot shortcuts.
+By installing this application, you agree not to attempt to bypass, disable, modify, or tamper with these security controls.
+
+3. DATA LOGGING
+You acknowledge that the application logs security events (such as tab-switching counts and screenshot attempts) and reports them to the central examination portal for administrator review.
+
+4. RESTRICTIONS
+You shall not:
+- Decompile, reverse engineer, disassemble, or derive the source code of this software.
+- Modify, adapt, or create derivative works based upon the software.
+- Rent, lease, sublicense, distribute, or transfer copies of the software to third parties.
+
+5. TERMINATION
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any terms of this agreement.
+
+If you accept these terms, click "I Agree" to proceed with the installation.
