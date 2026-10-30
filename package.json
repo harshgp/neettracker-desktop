@@ -1,6 +1,6 @@
 {
   "name": "neettracker-desktop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NeetTracker Desktop Application",
   "author": "NeetTracker <support@neettracker.com>",
   "main": "main.js",
@@ -15,7 +15,8 @@
     "appId": "com.neettracker.app",
     "productName": "NeetTracker",
     "directories": {
-      "output": "dist"
+      "output": "dist",
+      "buildResources": "build"
     },
     "afterPack": "./afterPack.js",
     "mac": {
